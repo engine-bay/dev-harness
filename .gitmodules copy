@@ -1,0 +1,51 @@
+[submodule "api-documentation"]
+	path = api-documentation
+	url = git@github.com:engine-bay/api-documentation.git
+[submodule "authentication"]
+	path = authentication
+	url = git@github.com:engine-bay/authentication.git
+[submodule "core"]
+	path = core
+	url = git@github.com:engine-bay/core.git
+[submodule "demo-module"]
+	path = demo-module
+	url = git@github.com:engine-bay/demo-module.git
+[submodule "logging"]
+	path = logging
+	url = git@github.com:engine-bay/logging.git
+[submodule "persistence"]
+	path = persistence
+	url = git@github.com:engine-bay/persistence.git
+[submodule "database-management"]
+	path = database-management
+	url = git@github.com:engine-bay/database-management.git
+[submodule "actor-engine"]
+	path = actor-engine
+	url = git@github.com:engine-bay/actor-engine.git
+[submodule "blueprints"]
+	path = blueprints
+	url = git@github.com:engine-bay/blueprints.git
+[submodule "cors"]
+	path = cors
+	url = git@github.com:engine-bay/cors.git
+[submodule "engine-bay-ce"]
+	path = engine-bay-ce
+	url = git@github.com:engine-bay/engine-bay-ce.git
+[submodule "module-template"]
+	path = module-template
+	url = git@github.com:engine-bay/module-template.git
+[submodule "sheet-functions"]
+	path = sheet-functions
+	url = git@github.com:engine-bay/sheet-functions.git
+[submodule "telemetry"]
+	path = telemetry
+	url = git@github.com:engine-bay/telemetry.git
+[submodule "admin-portal"]
+	path = admin-portal
+	url = git@github.com:engine-bay/admin-portal.git
+[submodule "data-protection"]
+	path = data-protection
+	url = git@github.com:engine-bay/data-protection.git
+[submodule "documentation-portal"]
+	path = documentation-portal
+	url = git@github.com:engine-bay/documentation-portal.git
