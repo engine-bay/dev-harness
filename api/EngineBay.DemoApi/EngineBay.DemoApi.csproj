@@ -30,7 +30,7 @@
     <PackageReference Include="EngineBay.ApiDocumentation" Version="1.0.0" />
     <PackageReference Include="EngineBay.DatabaseManagement" Version="3.0.0" />
     <PackageReference Include="EngineBay.Cors" Version="1.0.0" />
-    <ProjectReference Include="../../demo-module\EngineBay.DemoModule\EngineBay.DemoModule.csproj" />
+    <PackageReference Include="EngineBay.DemoModule" Version="0.0.1" />
   </ItemGroup>
 
   <ItemGroup>

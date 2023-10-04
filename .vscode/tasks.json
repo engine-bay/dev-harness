@@ -7,9 +7,11 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/",
+                "${workspaceFolder}/.dev/EngineBay.DevHarness.sln",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:NoSummary",
+                "-c",
+                "dev"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -33,7 +35,9 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/api/"
+                "${workspaceFolder}/api/",
+                "-c",
+                "dev"
             ],
             "problemMatcher": "$msCompile"
         }
