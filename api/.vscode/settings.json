@@ -1,0 +1,27 @@
+{
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[csharp]": {
+      "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[aspnetcorerazor]": {
+      "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[helm]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.words": [
+      "DATABASEPROVIDER",
+      "Initialiser",
+      "Newtonsoft",
+      "Xunit"
+    ]
+  }
