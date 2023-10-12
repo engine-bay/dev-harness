@@ -82,8 +82,8 @@ dotnet sln add "telemetry/EngineBay.Telemetry.Tests/EngineBay.Telemetry.Tests.cs
 dotnet add 'api/EngineBay.ApiDocumentation/EngineBay.ApiDocumentation.Dev.csproj' reference 'api-documentation/EngineBay.ApiDocumentation/EngineBay.ApiDocumentation.Dev.csproj'
 
 
-dotnet sln add "api/EngineBay.DemoApi/EngineBay.DemoApi.csproj"
-dotnet sln add "api/EngineBay.DemoApi.Tests/EngineBay.DemoApi.Tests.csproj"
+dotnet sln add "../api/EngineBay.DemoApi/EngineBay.DemoApi.csproj"
+dotnet sln add "../api/EngineBay.DemoApi.Tests/EngineBay.DemoApi.Tests.csproj"
 
 
 git add .
