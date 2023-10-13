@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/api/EngineBay.DemoApi/bin/Debug/net7.0/EngineBay.DemoApi.dll",
+            "program": "${workspaceFolder}/demo-api/EngineBay.DemoApi/bin/Debug/net7.0/EngineBay.DemoApi.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/api/EngineBay.DemoApi",
+            "cwd": "${workspaceFolder}/demo-api/EngineBay.DemoApi",
             "stopAtEntry": false,
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",

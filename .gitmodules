@@ -49,3 +49,6 @@
 [submodule "telemetry"]
 	path = telemetry
 	url = git@github.com:engine-bay/telemetry.git
+[submodule "demo-api"]
+	path = demo-api
+	url = git@github.com:engine-bay/demo-api.git

@@ -40,6 +40,7 @@ git submodule add git@github.com:engine-bay/module-template.git module-template
 git submodule add git@github.com:engine-bay/persistence.git persistence
 git submodule add git@github.com:engine-bay/sheet-functions.git sheet-functions
 git submodule add git@github.com:engine-bay/telemetry.git telemetry
+git submodule add git@github.com:engine-bay/demo-api.git
 
 
 dotnet sln add "actor-engine/EngineBay.ActorEngine/EngineBay.ActorEngine.csproj"
