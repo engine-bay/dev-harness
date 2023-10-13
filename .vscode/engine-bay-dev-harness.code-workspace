@@ -1,0 +1,72 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "dotnet.defaultSolution": ".dev/EngineBay.DevHarness.sln",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true,
+      "source.fixAll.markdownlint": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "eslint.format.enable": true,
+    "omnisharp.useModernNet": true,
+    "[csharp]": {
+      "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[sql]": {
+      "editor.defaultFormatter": "ms-mssql.mssql"
+    },
+    "[xml]": {
+      "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.language": "en-GB",
+    "cSpell.words": [
+      "Powerups",
+      "DATABASEPROVIDER",
+      "Initialiser",
+      "Newtonsoft",
+      "Xunit"
+    ],
+    "editor.detectIndentation": false
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-dotnettools.csdevkit",
+      "ms-dotnettools.vscodeintellicode-csharp",
+      "ms-dotnettools.vscode-dotnet-runtime",
+      "ms-dotnettools.csharp",
+      "ms-vscode-remote.remote-containers",
+      "mikestead.dotenv",
+      "ms-dotnettools.csharp",
+      "streetsidesoftware.code-spell-checker",
+      "editorconfig.editorconfig",
+      "ms-azuretools.vscode-docker",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "visualstudioexptteam.vscodeintellicode",
+      "esbenp.prettier-vscode",
+      "josefpihrt-vscode.roslynator",
+      "redhat.vscode-yaml",
+      "redhat.vscode-xml"
+    ]
+  }
+}
