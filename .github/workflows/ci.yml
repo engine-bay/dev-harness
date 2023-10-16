@@ -1,4 +1,4 @@
-name: Continious Integration
+name: Continuous Integration
 
 on:
   push:
@@ -11,28 +11,30 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 7.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
+      - uses: actions/checkout@v3
+        with:
+          submodules: "true"
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
   test:
     needs: [build]
     name: Test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 7.0.x
-    - run: dotnet tool restore
-    - run: dotnet coverage collect dotnet test --output ./output.cobertura.xml --output-format cobertura
-    - run: dotnet reportgenerator -reports:./output.cobertura.xml -targetdir:"." -reporttypes:Clover -assemblyfilters:"-FluentValidation;-Humanizer;-OidcClient;-IdentityModel.OidcClient;-Microsoft.TestPlatform*;-Microsoft.VisualStudio*;-xunit*;-Pipelines.Sockets*;-StackExchange.Redis*;"
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - run: dotnet tool restore
+      - run: dotnet coverage collect dotnet test --output ./output.cobertura.xml --output-format cobertura
+      - run: dotnet reportgenerator -reports:./output.cobertura.xml -targetdir:"." -reporttypes:Clover -assemblyfilters:"-FluentValidation;-Humanizer;-OidcClient;-IdentityModel.OidcClient;-Microsoft.TestPlatform*;-Microsoft.VisualStudio*;-xunit*;-Pipelines.Sockets*;-StackExchange.Redis*;"
     # - uses: paambaati/codeclimate-action@v3.2.0
     #   env:
     #     CC_TEST_REPORTER_ID:
@@ -51,15 +53,15 @@ jobs:
       matrix:
         language: ["csharp"]
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
-      with:
-        languages: ${{ matrix.language }}
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-      with:
-        category: "/language:${{matrix.language}}"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ${{ matrix.language }}
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:${{matrix.language}}"
