@@ -9,19 +9,17 @@ This is the community edition of EngineBay.
 
 ## Related packages
 
-* [EngineBay.ActorEngine](https://github.com/engine-bay/actor-engine)
-* [EngineBay.ApiDocumentation](https://github.com/engine-bay/api-documentation)
-* [EngineBay.Authentication](https://github.com/engine-bay/authentication)
-* [EngineBay.Blueprints](https://github.com/engine-bay/blueprints)
-* [EngineBay.Core](https://github.com/engine-bay/core)
-* [EngineBay.Cors](https://github.com/engine-bay/cors)
-* [EngineBay.DatabaseManagement](https://github.com/engine-bay/database-management)
-* [EngineBay.Logging](https://github.com/engine-bay/logging)
-* [EngineBay.Persistence](https://github.com/engine-bay/persistence)
-* [EngineBay.SheetFunctions](https://github.com/engine-bay/sheet-functions)
-* [EngineBay.Telemetry](https://github.com/engine-bay/telemetry)
-
-
+- [EngineBay.ActorEngine](https://github.com/engine-bay/actor-engine)
+- [EngineBay.ApiDocumentation](https://github.com/engine-bay/api-documentation)
+- [EngineBay.Authentication](https://github.com/engine-bay/authentication)
+- [EngineBay.Blueprints](https://github.com/engine-bay/blueprints)
+- [EngineBay.Core](https://github.com/engine-bay/core)
+- [EngineBay.Cors](https://github.com/engine-bay/cors)
+- [EngineBay.DatabaseManagement](https://github.com/engine-bay/database-management)
+- [EngineBay.Logging](https://github.com/engine-bay/logging)
+- [EngineBay.Persistence](https://github.com/engine-bay/persistence)
+- [EngineBay.SheetFunctions](https://github.com/engine-bay/sheet-functions)
+- [EngineBay.Telemetry](https://github.com/engine-bay/telemetry)
 
 git submodule add git@github.com:engine-bay/actor-engine.git actor-engine
 git submodule add git@github.com:engine-bay/admin-portal.git admin-portal
@@ -41,7 +39,6 @@ git submodule add git@github.com:engine-bay/persistence.git persistence
 git submodule add git@github.com:engine-bay/sheet-functions.git sheet-functions
 git submodule add git@github.com:engine-bay/telemetry.git telemetry
 git submodule add git@github.com:engine-bay/demo-api.git
-
 
 dotnet sln add "actor-engine/EngineBay.ActorEngine/EngineBay.ActorEngine.csproj"
 dotnet sln add "actor-engine/EngineBay.ActorEngine.Tests/EngineBay.ActorEngine.Tests.csproj"
@@ -78,14 +75,10 @@ dotnet sln add "sheet-functions/EngineBay.SheetFunctions.Tests/EngineBay.SheetFu
 dotnet sln add "telemetry/EngineBay.Telemetry/EngineBay.Telemetry.csproj"
 dotnet sln add "telemetry/EngineBay.Telemetry.Tests/EngineBay.Telemetry.Tests.csproj"
 
-
-
 dotnet add 'api/EngineBay.ApiDocumentation/EngineBay.ApiDocumentation.Dev.csproj' reference 'api-documentation/EngineBay.ApiDocumentation/EngineBay.ApiDocumentation.Dev.csproj'
 
-
-dotnet sln add "../api/EngineBay.DemoApi/EngineBay.DemoApi.csproj"
-dotnet sln add "../api/EngineBay.DemoApi.Tests/EngineBay.DemoApi.Tests.csproj"
-
+dotnet sln add "demo-api/EngineBay.DemoApi/EngineBay.DemoApi.csproj"
+dotnet sln add "demo-api/EngineBay.DemoApi.Tests/EngineBay.DemoApi.Tests.csproj"
 
 git add .
 git stash -m"-dev csproj"
