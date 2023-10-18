@@ -9,7 +9,15 @@ This readme covers the development guide for repositories in the EngineBay organ
 
 ## Prerequisites
 
-Environment Variables
+### Install
+
+- [Python](https://www.python.org/)
+  > If you get an error on Windows that python or pip is not recognised or cannot run
+  >
+  > - Check that the python install location has been added to your PATH
+  > - Check that Windows Defender is not blocking Python and add it to your exclusion list if needed
+
+### Environment Variables
 
 - ASPNETCORE_ENVIRONMENT="Development"
 
