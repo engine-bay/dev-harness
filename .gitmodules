@@ -70,3 +70,7 @@
 	path = demo-api
 	url =../demo-api.git
 	branch = main
+[submodule "auditing"]
+	path = auditing
+	url = ../auditing.git
+	branch = main
