@@ -86,6 +86,7 @@ dotnet run --project demo-api/EngineBay.DemoApi
 - [EngineBay.ActorEngine](https://github.com/engine-bay/actor-engine)
 - [EngineBay.AdminPortal](https://github.com/engine-bay/admin-portal)
 - [EngineBay.ApiDocumentation](https://github.com/engine-bay/api-documentation)
+- [EngineBay.Auditing](https://github.com/engine-bay/auditing)
 - [EngineBay.Authentication](https://github.com/engine-bay/authentication)
 - [EngineBay.Blueprints](https://github.com/engine-bay/blueprints)
 - [EngineBay.Core](https://github.com/engine-bay/core)
