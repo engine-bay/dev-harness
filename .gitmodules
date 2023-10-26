@@ -72,5 +72,5 @@
 	branch = main
 [submodule "auditing"]
 	path = auditing
-	url = ../auditing.git
+	url =../auditing.git
 	branch = main
