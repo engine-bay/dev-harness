@@ -13,6 +13,9 @@
       "path": "api-documentation"
     },
     {
+      "path": "auditing"
+    },
+    {
       "path": "authentication"
     },
     {
