@@ -1,11 +1,68 @@
 {
   "folders": [
     {
-      "path": ".."
+      "path": "."
+    },
+    {
+      "path": "actor-engine"
+    },
+    {
+      "path": "admin-portal"
+    },
+    {
+      "path": "api-documentation"
+    },
+    {
+      "path": "auditing"
+    },
+    {
+      "path": "authentication"
+    },
+    {
+      "path": "blueprints"
+    },
+    {
+      "path": "core"
+    },
+    {
+      "path": "cors"
+    },
+    {
+      "path": "data-protection"
+    },
+    {
+      "path": "database-management"
+    },
+    {
+      "path": "demo-api"
+    },
+    {
+      "path": "demo-module"
+    },
+    {
+      "path": "documentation-portal"
+    },
+    {
+      "path": "engine-bay-ce"
+    },
+    {
+      "path": "logging"
+    },
+    {
+      "path": "module-template"
+    },
+    {
+      "path": "persistence"
+    },
+    {
+      "path": "sheet-functions"
+    },
+    {
+      "path": "telemetry"
     }
   ],
   "settings": {
-    "dotnet.defaultSolution": ".dev/EngineBay.DevHarness.sln",
+    "dotnet.defaultSolution": "./EngineBay.DevHarness.sln",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true,
       "source.fixAll": true,
@@ -21,6 +78,9 @@
       "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
     "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[cjson]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[sql]": {
@@ -40,13 +100,15 @@
     },
     "cSpell.language": "en-GB",
     "cSpell.words": [
-      "Powerups",
       "DATABASEPROVIDER",
       "Initialiser",
       "Newtonsoft",
       "Xunit"
     ],
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
   },
   "extensions": {
     "recommendations": [
