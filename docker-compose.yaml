@@ -1,0 +1,22 @@
+version: "3"
+services:
+  engine-bay-community-edition:
+    container_name: engine-bay-community-edition
+    image: engine-bay-community-edition
+    env_file:
+      - engine-bay-ce/.env
+    build:
+      context: engine-bay-ce
+      dockerfile: Dockerfile
+    ports:
+      - "5050:5050"
+  engine-bay-demo-api:
+    container_name: engine-bay-demo-api
+    image: engine-bay-demo-api
+    env_file:
+      - demo-api/.env
+    build:
+      context: demo-api
+      dockerfile: Dockerfile
+    ports:
+      - "5051:5051"
