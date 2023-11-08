@@ -11,11 +11,26 @@ This readme covers the development guide for repositories in the EngineBay organ
 
 ### Install
 
+- [Node](https://nodejs.org/)
+    ```bash
+    node --version
+    ```
+
 - [Python](https://www.python.org/)
-  > If you get an error on Windows that python or pip is not recognised or cannot run
-  >
-  > - Check that the python install location has been added to your PATH
-  > - Check that Windows Defender is not blocking Python and add it to your exclusion list if needed
+    ```bash
+    python --version
+    python3 --version
+    ```
+    >   If you get an error on Windows that python or pip is not recognised or cannot run
+    >
+    > - Check that the python install location has been added to your PATH
+    > - Check that Windows Defender is not blocking Python and add it to your exclusion list if needed
+
+- [Pip](https://pip.pypa.io/en/stable/installation/)
+    ```bash
+    pip3 --version
+    ```
+    > Pip should be installed with Python, check using the above command before installing
 
 ### Environment Variables
 
@@ -23,63 +38,53 @@ This readme covers the development guide for repositories in the EngineBay organ
 
   The projects in each repo by default uses nuget packages to reference other projects. When running in a development environment we switch to project references. This is so changes in one project will immediately reflect in another project without the need to push to Nuget first.
 
-  Linux
-
-  Add the following line to your .bashrc or similar. This will set it for all terminals going forward, alternatively look into setting it up per terminal session.
-
-  ```
-  export ASPNETCORE_ENVIRONMENT="Development"
-  ```
+  Linux & Mac
+  > Add the following line to your .bashrc or similar. This will set it for all terminals going forward, alternatively look into setting it up per terminal session.
+  > ```
+  > export ASPNETCORE_ENVIRONMENT="Development"
+  > ```
 
   Windows
-
-  Run the following command
-
-  ```
-  setx ASPNETCORE_ENVIRONMENT Development
-  ```
+  > Run the following command
+  > ```
+  > setx ASPNETCORE_ENVIRONMENT Development
+  > ```
 
 ## Getting started for local development
 
-This workflow runs the individual components using that technology ecosystem's tools (e.g. npm or the dotnet cli)
-
-Run the following commands
-
-- Clone the repo
+### Clone the repo
 
   ```
-  git clone git@github.com:engine-bay/dev-harness.git
+  git clone git@github.com:engine-bay/dev-harness.git --recursive
   ```
-
-- Navigate to the repo folder
-
-  ```
-  cd dev-harness
-  ```
-
-- Pull the submodules
-
-  ```
-  git submodule update --init
-  ```
-
-- Run the EngineBay.DemoApi Project
 
 ### VS Code
 
-This is the preferred way to run this project.
+- Open the [engine-bay-dev-harness](./engine-bay-dev-harness.code-workspace) workspace
+- Run the `Debug All (Demo API & Community Edition)` launch configuration
 
-Open the [engine-bay-dev-harness](.vscode/engine-bay-dev-harness.code-workspace) workspace in the .vscode folder
+### Other IDEs
 
-App settings are already configured in the [launch](.vscode/launch.json) file
+For Rider, Visual Studio and the CLI to configure your app settings in the launchsettings.json file. You can copy the environment variables for each of the projects
+- [Demo API](./demo-api/.env)
+- [Community Edition](./engine-bay-ce/.env)
 
-### Other
+### Docker Compose
 
-For other IDEs and the CLI remember to configure your apps ettings in the launchsettings.json file. You can copy the environment variables from the [launch](.vscode/launch.json)
-
+Run the [docker-compose](./docker-compose.yaml) file
 ```
-dotnet run --project demo-api/EngineBay.DemoApi
+docker compose up
 ```
+
+### Running the apps
+
+There are a number of apps taht will start up whe using the above methods
+
+Please see
+
+- [Demo API](./demo-api/README.md)
+- [Community Edition](./engine-bay-ce/README.md)
+
 
 ## Related packages
 
