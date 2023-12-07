@@ -58,6 +58,11 @@ This readme covers the development guide for repositories in the EngineBay organ
   git clone git@github.com:engine-bay/dev-harness.git --recursive
   ```
 
+### Update the submodules
+  ```
+  git submodule foreach "git checkout main"
+  ```
+
 ### VS Code
 
 - Open the [engine-bay-dev-harness](./engine-bay-dev-harness.code-workspace) workspace
@@ -69,16 +74,13 @@ For Rider, Visual Studio and the CLI to configure your app settings in the launc
 - [Demo API](./demo-api/.env)
 - [Community Edition](./engine-bay-ce/.env)
 
-### Docker Compose
+## Running the Application
 
-Run the [docker-compose](./docker-compose.yaml) file
-```
-docker compose up
-```
+- Use [this startup script](./scripts/server.sh) to start the applications in docker.
+- Use [this teardown script](./scripts/server-down.sh) to stop the applications in docker and remove the images.
 
-### Running the apps
 
-There are a number of apps taht will start up whe using the above methods
+There are a number of apps that will start up whe using the above methods
 
 Please see
 
