@@ -55,6 +55,9 @@
       "path": "persistence"
     },
     {
+      "path": "rate-limiting"
+    },
+    {
       "path": "sheet-functions"
     },
     {
@@ -64,10 +67,10 @@
   "settings": {
     "dotnet.defaultSolution": "./EngineBay.DevHarness.sln",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-      "source.fixAll": true,
-      "source.fixAll.markdownlint": false,
-      "source.fixAll.eslint": true
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit",
+        "source.fixAll.markdownlint": "never",
+        "source.fixAll.eslint": "explicit"
     },
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
@@ -99,12 +102,7 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "cSpell.language": "en-GB",
-    "cSpell.words": [
-      "DATABASEPROVIDER",
-      "Initialiser",
-      "Newtonsoft",
-      "Xunit"
-    ],
+    "cSpell.words": ["DATABASEPROVIDER", "Initialiser", "Newtonsoft", "Xunit"],
     "editor.detectIndentation": false,
     "[jsonc]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
