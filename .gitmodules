@@ -76,4 +76,4 @@
 	branch = main
 [submodule "rate-limiting"]
 	path = rate-limiting
-	url = git@github.com:engine-bay/rate-limiting.git
+	url = ../rate-limiting.git
