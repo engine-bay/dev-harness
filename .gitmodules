@@ -74,3 +74,6 @@
 	path = auditing
 	url =../auditing.git
 	branch = main
+[submodule "rate-limiting"]
+	path = rate-limiting
+	url = ../rate-limiting.git
