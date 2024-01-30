@@ -1,0 +1,28 @@
+version: "3"
+services:
+  engine-bay-community-edition:
+    container_name: engine-bay-community-edition
+    image: engine-bay-community-edition
+    env_file:
+      - engine-bay-ce/.env
+    build:
+      context: engine-bay-ce
+      dockerfile: Dockerfile
+    ports:
+      - "5050:5050"
+  engine-bay-demo-api-basic:
+    container_name: engine-bay-demo-api
+    image: engine-bay-demo-api
+    env_file:
+      - demo-api/.env
+    environment:
+      - API_DOCUMENTATION_AUTHENTICATION_METHOD=Basic
+      - AUTHENTICATION_METHOD=Basic
+      - AUTHENTICATION_AUDIENCE=http://localhost:5051
+      - AUTHENTICATION_ISSUER=http://localhost:5051
+      - AUTHENTICATION_VALIDATE_ISSUER_SIGNING_KEY=false
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5051:5051"
