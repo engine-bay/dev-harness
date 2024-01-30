@@ -2,7 +2,7 @@
 
 cd ..
 
-docker compose --file docker-compose.yaml down
+docker compose --file docker-compose.dev.yaml down
 
 docker rmi engine-bay-community-edition:latest
 

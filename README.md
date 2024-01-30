@@ -5,32 +5,27 @@
 
 ## About
 
-This readme covers the development guide for repositories in the EngineBay organisation.
+Engine Bay is comprised of multiple repositories referenced via nuget packages. This structure does not work well for local development.
+
+This repo tries to address this issue and provide a frictionless development harness for Engine Bay.
+
+## How does it work.
+
+This wraps all EngineBay repositories as sub modules and provides a solution file pulling in all the sub modules as projects. Each project file will then conditionally load dependency projects as project references instead of packages.
 
 ## Prerequisites
 
 ### Install
 
 - [Node](https://nodejs.org/)
-    ```bash
-    node --version
-    ```
-
 - [Python](https://www.python.org/)
-    ```bash
-    python --version
-    python3 --version
-    ```
-    >   If you get an error on Windows that python or pip is not recognised or cannot run
-    >
-    > - Check that the python install location has been added to your PATH
-    > - Check that Windows Defender is not blocking Python and add it to your exclusion list if needed
-
 - [Pip](https://pip.pypa.io/en/stable/installation/)
-    ```bash
-    pip3 --version
-    ```
-    > Pip should be installed with Python, check using the above command before installing
+
+
+>   If you get an error on Windows that python or pip is not recognised or cannot run
+>
+> - Check that the python install location has been added to your PATH
+> - Check that Windows Defender is not blocking Python and add it to your exclusion list if needed
 
 ### Environment Variables
 
@@ -76,13 +71,18 @@ For Rider, Visual Studio and the CLI to configure your app settings in the launc
 
 ## Running the Application
 
-- Use [this startup script](./scripts/server.sh) to start the applications in docker.
-- Use [this teardown script](./scripts/server-down.sh) to stop the applications in docker and remove the images.
+- Use [this startup script](./scripts/dev-server-up.sh) to start the applications in docker.
+- Use [this teardown script](./scripts/dev-server-down.sh) to stop the applications in docker and remove the images.
 
 
-There are a number of apps that will start up whe using the above methods
+## Scripts
 
-Please see
+- [Run the dev server](./scripts/dev-server-up.sh).
+- [Stop the dev server](./scripts/dev-server-down.sh)
+- [Run the server](./scripts/server-up.sh)
+- [Stop the server](./scripts/server-down.sh)
+
+## Also see
 
 - [Demo API](./demo-api/README.md)
 - [Community Edition](./engine-bay-ce/README.md)
